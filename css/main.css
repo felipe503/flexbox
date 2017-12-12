@@ -1,0 +1,52 @@
+html, body{
+  margin:0;
+  padding:0;
+  font-size:16px;
+  line-height: 18px;
+  height:100%;
+}
+.wrapper{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.wrapper > div{
+
+}
+div[class^="col-"]{
+  border:1px solid #333;
+  align-self:stretch;
+  padding:.8em;
+  margin:.8em;
+  display: flex;
+  flex-direction: column;
+}
+div[class^="col-"] h2{
+
+}
+div[class^="col-"] p{
+
+}
+@media (min-width:760px) {
+  .col-1 {flex-basis: 8.33%; order:0; background-color: #f4f4f4;}
+  .col-2 {flex-basis: 16.66%; order:1; background-color: #d3d3d3;}
+  .col-3 {flex-basis: 25%; order:2; background-color: #ff0033;}
+  .col-4 {flex-basis: 33.33%; order:3; background-color: #cc00ff;}
+  .col-5 {flex-basis: 41.66%; order:4; background-color: #cc0011;}
+  .col-6 {flex-basis: 50%; order:5; background-color: #22FF00;}
+  .col-7 {flex-basis: 58.33%; order:6; background-color: #00FF00;}
+  .col-8 {flex-basis: 66.66%; order:7; background-color: #d3d3d3;}
+  .col-9 {flex-basis: 75%; order:8; background-color: #d3d3d3;}
+  .col-10 {flex-basis: 83.33%; order:9; background-color: #d3d3d3;}
+  .col-11 {flex-basis: 91.66%; order:10; background-color: #2200FF;}
+  .col-12 {flex-basis: 100%; order:11; background-color: #FF0066;}
+
+  div[class^="col-"]{
+
+  }
+
+  div[class^="col-"] *{
+    flex-wrap: wrap;
+    align-self:stretch;
+  }
+}
